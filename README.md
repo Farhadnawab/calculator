@@ -1,7 +1,6 @@
-# calculator
-Stack: HTML - CSS - JS - VUE - AXIOS - AIRTABLE API
+# calculator - HTML / CSS / JS / VUE / AXIOS / AIRTABLE API
 
-Project Description from client:
+# Project Description from client:
 We're building a WIX-webpage and need some extra functions to be implemented that WIX can not handle. This calculator should be built html - css - JS to be easily placed in the existing webpage.
 
 The idea is pretty simple. The user comes to a website and finds the HTML block that you will create and follows a few steps:
