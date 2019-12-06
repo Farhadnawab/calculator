@@ -224,6 +224,12 @@
             color: #1a1919;
         }
 
+        
+        @media screen and (max-width: 1024px){
+            .product-image {
+                padding-bottom: 60% !important;
+            }
+        }
         @media screen and (max-width: 768px)  {
             
             h1{
@@ -266,11 +272,6 @@
                 width: 12px;
                 top: 3px;
                 left: 3px;
-            }
-        }
-        @media screen and (max-width: 1024px){
-            .product-image {
-                padding-bottom: 60% !important;
             }
         }
         
@@ -516,10 +517,10 @@
         <!-- STEP 3 - END -->
 
         <!-- POPUP -->
-        <div class="detail-popup hidden fixed top-0 left-0 w-full h-full" id="popup">
+        <div class="detail-popup hidden fixed top-0 left-0 w-screen h-screen" id="popup">
 
             <div class="container mx-auto max-w-6xl flex items-center justify-center h-screen">
-                <div class="relative bg-white p-20">
+                <div class="relative bg-white py-20 px-8 md:p-20">
                     <button class="absolute top-0 right-0 mr-5 mt-5" @click="closePopup">
                         <svg width="36px" height="36px" viewBox="0 0 36 36">
                             <path d="M13.2813 11.7189L13.2813 0.780128C13.2813 0.349208 12.9319 -0.00012207 12.501 -0.00012207L12.499 -0.00012207C12.0681 -0.00012207 11.7188 0.349208 11.7188 0.780128L11.7188 11.7189L0.78025 11.7189C0.34933 11.7189 0 12.0682 0 12.4991L0 12.5011C0 12.932 0.34933 13.2814 0.78025 13.2814L11.7188 13.2814L11.7188 24.2196C11.7188 24.6505 12.0681 24.9999 12.499 24.9999L12.501 24.9999C12.9319 24.9999 13.2813 24.6505 13.2813 24.2196L13.2813 13.2814L24.2197 13.2814C24.6507 13.2814 25 12.932 25 12.5011L25 12.4991C25 12.0682 24.6507 11.7189 24.2197 11.7189L13.2813 11.7189Z" transform="matrix(0.7071066 0.7071069 -0.7071069 0.7071066 17.67773 0)" id="Combined-Shape" fill="#1A1919" fill-rule="evenodd" stroke="none" />
@@ -527,16 +528,16 @@
                     </button>
 
                     <div class="flex flex-wrap">
-                        <div class="w-2/6">
-                            <div class="font-family-oswald font-bold text-5xl uppercase leading-tight">{{ this.popup.title }}</div>
-                            <div class="leading-loose mt-5 text-xl">{{ this.popup.description }}</div>
+                        <div class="w-full md:w-2/6">
+                            <div class="font-family-oswald font-bold text-2xl md:text-5xl uppercase leading-tight">{{ this.popup.title }}</div>
+                            <div class="leading-loose mt-5 text-sm md:text-xl">{{ this.popup.description }}</div>
                             <div class="border-l border-black pl-6 mt-10">
                                 This product<br/>
                                 <b>takes {{ this.popup.weight }} kg of<br/>
                                 waste</b> to build.
                             </div>
                         </div>
-                        <div class="w-4/6 pl-20">
+                        <div class="w-full md:w-4/6 mt-10 md:mt-0 md:pl-20">
                             <img :src="'https://picsum.photos/475/344?random='+ this.popup.weight" class="w-full" />
 
                             <div class="flex -ml-3 -mr-3">
