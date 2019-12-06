@@ -738,7 +738,7 @@
                     let target = e.target;
                     let $parent = $("#" + $(target).closest("*[data-product-id]").attr("data-product-id")); //get product
                         
-                    this.fillPopup(target.getAttribute("id")); //set values
+                    this.fillPopup(target.id); //set values
                     $("#popup").show(); //show popup
                 },
                 fillPopup: function(e){
