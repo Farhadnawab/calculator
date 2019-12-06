@@ -55,19 +55,6 @@
             font-weight: normal;
             color: #1a1919;
         }
-        .steps .step{
-            -webkit-transition: all ease 0.5s;
-            -moz-transition: all ease 0.5s;
-            transition: all ease 0.5s;
-            -webkit-transform: translateX(100%);
-            -moz-transform: translateX(100%);
-            transform: translateX(100%);
-        }
-        .steps .step.active{
-            -webkit-transform: translateX(0%);
-            -moz-transform: translateX(0%);
-            transform: translateX(0%);
-        }
         .steps .step:before{
             content: "";
             position: absolute;
@@ -296,7 +283,7 @@
     <div id="app" class="steps flex relative">
 
         <!-- STEP 1 - START -->
-        <div id="step-1" class="step px-4 w-screen inline-flex flex-grow flex-shrink-0 items-center justify-center bg-yellow relative active">
+        <div id="step-1" class="step px-4 w-screen inline-flex flex-grow flex-shrink-0 items-center justify-center bg-yellow relative">
             
             <div class="container w-full mx-auto pt-20 pb-20">
 
@@ -636,21 +623,21 @@
                 },
                 step1: function(event){
                     
-                    $("#step-1").addClass("active");
-                    $("#step-2").removeClass("active");
-                    $("#step-3").removeClass("active");
+                    $("#step-1").fadeIn();
+                    $("#step-2").fadeOut();
+                    $("#step-3").fadeOut();
                 },
                 step2: function(event){
                     
-                    $("#step-1").removeClass("active");
-                    $("#step-2").addClass("active");
-                    $("#step-3").removeClass("active");
+                    $("#step-1").fadeOut();
+                    $("#step-2").fadeIn();
+                    $("#step-3").fadeOut();
                 },
                 step3: function(event){
                     
-                    $("#step-1").removeClass("active");
-                    $("#step-2").removeClass("active");
-                    $("#step-3").addClass("active");
+                    $("#step-1").fadeOut();
+                    $("#step-2").fadeOut();
+                    $("#step-3").fadeIn();
                 },
                 submitForm: function(e){
                    
