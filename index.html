@@ -730,12 +730,12 @@
                 },
                 closePopup: function(e){
                     
-                    let $parent = $(e.target).closest("#popup"); //get popup
+                    let $parent = $(e.currentTarget).closest("#popup"); //get popup
 
                     $parent.hide(); //hide popup
                 },
                 openPopup: function(e){
-                    let target = e.target;
+                    let target = e.currentTarget;
                     let $parent = $("#" + $(target).closest("*[data-product-id]").attr("data-product-id")); //get product
                         
                     this.fillPopup(target.id); //set values
