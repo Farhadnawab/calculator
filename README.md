@@ -15,3 +15,6 @@ The tool will be used by the client to find prospects for a new business idea. I
 I've already created the airtable with 2 tabs: tab on: "Data", this tab should be used to GET information and use in the tool. Tab "Form Output" is to be used to send all data from the form to. You can get access to the airtable through this link: (link removed) .
 
 I will include the design files (in sketch & PDF below).
+
+# End Result:
+https://farhadnawab.github.io/calculator/index.html
