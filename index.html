@@ -367,7 +367,7 @@
                         <div class="w-full max-w-sm sm:max-w-full sm:w-1/2 lg:w-1/4 p-5"  v-for="(item, index) in items">
                             <div class="product bg-white min-h-full" :id="'product-'+ (index+1)" :data-product-id="'product-'+ (index+1)">
                                 <div class="product-image relative border-b border-gray-200 bg-contain bg-center bg-no-repeat" :style="{ backgroundImage: 'url('+ formOutput.productImage[index] +')', paddingBottom: '100%' }">
-                                    <button @click="openPopup" :id="index" class="absolute bottom-0 left-0 flex flex-col items-center justify-center text-white w-full h-0 overflow-hidden">
+                                    <button @click="openPopup" :id="index" class="absolute z-20 bottom-0 left-0 flex flex-col items-center justify-center text-white w-full h-0 overflow-hidden">
                                         <svg width="47px" height="47px" viewBox="0 0 47 47">
                                             <path d="M35.1253 32.363L46.4242 43.6619C47.1919 44.4197 47.1919 45.6665 46.4242 46.4242C45.6571 47.1919 44.4197 47.1919 43.6521 46.4242L32.3532 35.1347C28.9384 37.9354 24.5743 39.6139 19.807 39.6139C8.86307 39.6139 0 30.7415 0 19.807C0 8.87242 8.86307 0 19.807 0C30.7415 0 39.6139 8.87242 39.6139 19.807C39.6139 24.5743 37.926 28.9482 35.1253 32.363ZM3.93274 19.8068C3.93274 28.5547 11.0497 35.6718 19.8069 35.6718C28.5548 35.6718 35.6817 28.5547 35.6817 19.8068C35.6817 11.059 28.5548 3.93262 19.8069 3.93262C11.0497 3.93262 3.93274 11.059 3.93274 19.8068Z" id="Fill-1" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
                                         </svg>
