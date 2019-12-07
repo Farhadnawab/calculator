@@ -626,19 +626,19 @@
                 step1: function(event){
                     
                     $("#step-1").fadeIn();
-                    $("#step-2").fadeOut();
-                    $("#step-3").fadeOut();
+                    $("#step-2").hide();
+                    $("#step-3").hide();
                 },
                 step2: function(event){
                     
-                    $("#step-1").fadeOut();
+                    $("#step-1").hide();
                     $("#step-2").fadeIn();
-                    $("#step-3").fadeOut();
+                    $("#step-3").hide();
                 },
                 step3: function(event){
                     
-                    $("#step-1").fadeOut();
-                    $("#step-2").fadeOut();
+                    $("#step-1").hide();
+                    $("#step-2").hide();
                     $("#step-3").fadeIn();
                 },
                 submitForm: function(e){
